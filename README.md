@@ -14,12 +14,36 @@ image with the command:
 $ docker pull swernst/locusts:latest
 ```
 
-This project is created by Boyuan (Keven) Guan to test Docker Compose with 
+This code was modified by Boyuan (Keven) Guan to test Docker Compose with 
 work load test. The image is available at:
 
 ```bash
 $ docker pull keven1894/loadtestor:latest
 ```
+
+## Prepare Environment
+You need to check if both [Docker](https://docs.docker.com/engine/installation/linux/ubuntu/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your ubuntu box.
+
+## Quick Start 
+To test in your cluster is very simple, just clone the repository
+
+```bash
+$ git clone https://github.com/Keven1894/dockerloadtestor
+```
+
+Then move to the project folder:
+
+```bash
+$ cd dockerloadtestor
+```
+
+And start the docker-compose service by calling:
+
+```bash
+$ sudo docker-compose up
+```
+
+Once all the master and worder are loaded, you can go to http://0.0.0.0:8089 to test your cluster.
 
 ## Master & Workers
 
